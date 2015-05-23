@@ -1,5 +1,6 @@
 package com.android.manit.fragments;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Intent;
@@ -9,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity implements ImageController.Communicator{
+public class MainActivity extends ActionBarActivity implements ImageController.Communicator{
 
     ImageController imageController;
     ImageViewer imageViewer;
@@ -37,6 +38,7 @@ public class MainActivity extends Activity implements ImageController.Communicat
     @Override
     public void respond(int index) {
         imageViewer = (ImageViewer) manager.findFragmentById(R.id.imageViewerId);
+        //Check for potrait mode. If imageViewer fragment is not present the screen is in potrait mode
         if(imageViewer != null && imageViewer.isVisible()){
             imageViewer.changeImage(index);
         }

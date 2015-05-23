@@ -1,10 +1,8 @@
 package com.android.manit.fragments;
 
 import android.app.Fragment;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +26,6 @@ public class ImageViewer extends Fragment{
 
     public void changeImage(int index) {
         if(imageView != null)
-            ((BitmapDrawable) imageView.getDrawable()).getBitmap().recycle();
-        imageView.setImageResource(images[index]);
+            imageView.setImageResource(images[index]);
     }
 }
