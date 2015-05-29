@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * Created by manit on 21/05/15.
+ * This class is responsible for the list of images.
  */
 public class ImageController extends Fragment implements AdapterView.OnItemClickListener{
     ListView imageList;
@@ -34,11 +35,11 @@ public class ImageController extends Fragment implements AdapterView.OnItemClick
         this.communicator = communicator;
     }
 
+    //Call to the respond method to change the image
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         communicator.respond(position);
     }
-
 
     public interface Communicator{
         public void respond(int index);

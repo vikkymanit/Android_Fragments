@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 /**
  * Created by manit on 21/05/15.
+ * This class is responsible for displaying the images
  */
 public class ImageViewer extends Fragment{
     ImageView imageView;
@@ -24,6 +25,7 @@ public class ImageViewer extends Fragment{
         return view;
     }
 
+    //Call to change the image
     public void changeImage(int index) {
         if(imageView != null)
             imageView.setImageResource(images[index]);
