@@ -34,8 +34,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity implements ImageController.Communicator{
 
-    ImageController imageController;
-    ImageViewer imageViewer;
+    ImageController imageController; //Fragment for the list of images
+    ImageViewer imageViewer;  //Fragment for displaying the images
     FragmentManager manager;
 
     @Override

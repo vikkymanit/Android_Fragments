@@ -41,6 +41,7 @@ public class ImageController extends Fragment implements AdapterView.OnItemClick
         communicator.respond(position);
     }
 
+    //Interface for the main activity to loose coupling between image controller and image viewer class
     public interface Communicator{
         public void respond(int index);
     }

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:name="com.android.manit.fragments.ImageController"
         android:id="@+id/imageControllerId"
-        android:layout_gravity="left|center_vertical"/>
+        android:layout_gravity="left"/>
 
     <fragment
         android:layout_weight="2"
@@ -18,5 +18,5 @@
         android:layout_height="wrap_content"
         android:name="com.android.manit.fragments.ImageViewer"
         android:id="@+id/imageViewerId"
-        android:layout_gravity="left|center_vertical"/>
+        android:layout_gravity="left"/>
 </LinearLayout>
